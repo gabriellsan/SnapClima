@@ -1,0 +1,160 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: #f3f4fb;
+    font-family: 'inter', sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+
+.header, .temperature-details, .sunset-sunrise{
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Header */
+.header{
+    padding: 0 30px;
+}
+
+.header__city-search-bar{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    align-items: center;
+}
+
+.header__input{
+    border: none;
+    width: 100%;
+    height: 40px;
+    padding: 0 15px;
+    border-radius: 10px 0 0 10px;
+    appearance: none;
+    margin-right: -15px;
+}
+
+.header__button{
+    cursor: pointer;
+    min-width: 50px;
+    min-height: 50px;
+    border: none;
+    border-radius: 100%;
+    background: #393939;
+    color: #f3f4fb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.2s;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.header__button:hover{
+    filter: brightness(1.25);
+}
+
+.header__current-date,
+.header__city-name{
+    font-family: 'ubuntu', sans-serif;
+}
+
+.header__current-date{
+    color: #a2a2be;
+    font-size: 14px;
+    margin-top: 15px;
+}
+
+.header__city-name{
+    font-weight: 500;
+    font-size: 20px;
+    margin-top: 6px;
+}
+
+/* current temperature */
+
+.current-temperature{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.current-temperature__weather-icon{
+    width: 125px;
+    margin-top: 15px;
+}
+
+.current-temperature__description{
+    color: #b6aef0;
+    font-weight: 500;
+    font-size: 24px;
+    margin-top: 30px;
+}
+
+.current-temperature__info-label{
+    margin-top: 15px;
+    color: #a2a2be;
+}
+
+.current-temperature__current-temperature{
+    font-size: 24px;
+    font-weight: 500;
+    margin-top: 10px;
+}
+.current-temperature__description::first-letter{
+    text-transform: uppercase;
+}
+
+/* bottom container */
+
+.bottom-container{
+    background: #fff;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    border-radius: 25px 25px 0 0;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+.temperature-details{
+    display: flex;
+    margin-top: 30px;
+}
+
+.temperature-details__item{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-right: 1px solid #a2a2be;
+}
+
+.temperature-details__item:last-child{
+    border: none;
+}
+
+.temperature-details__label{
+    color: #a2a2be;
+}
+
+.temperature-details__value,
+.sunset-sunrise__value{
+    font-weight: 500;
+    margin-top: 7px;
+}
+
+/* sun */
+
+.sunset-sunrise{
+    display: flex;
+    margin: 30px auto;
+}
+
+.sunset-sunrise__item{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
